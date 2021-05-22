@@ -12,14 +12,13 @@ class MainCharacterCell: UICollectionViewCell {
     override var reuseIdentifier: String? {
         return "MainCharacterCell"
     }
-    
+
     let rootView = MainCharacterView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
         setupConstraints()
-        backgroundColor = .orange
     }
 
     required init?(coder: NSCoder) {
